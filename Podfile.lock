@@ -1,0 +1,36 @@
+PODS:
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - HexColors (6.0.0)
+  - Mapbox-iOS-SDK (4.0.2)
+  - MapboxDirections.swift (0.21.0):
+    - Polyline (~> 4.2)
+  - Polyline (4.2.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - HexColors (~> 6.0)
+  - Mapbox-iOS-SDK (~> 4.0)
+  - MapboxDirections.swift (~> 0.21)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
+    - HexColors
+    - Mapbox-iOS-SDK
+    - MapboxDirections.swift
+    - Polyline
+
+SPEC CHECKSUMS:
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  HexColors: f8c66339541a74bb08905bfe7cd4f8cc85e9e173
+  Mapbox-iOS-SDK: 02b15b70167d54b45fdc059737672a3a68cd780f
+  MapboxDirections.swift: 14d32d1601834e15c930cbab4201e57b0f7a2218
+  Polyline: 3d69f75bb136357e27291d439d0436c6ebda57a4
+
+PODFILE CHECKSUM: f75bfb4ffdd2d6cd7c7caefd9affcc6c5ad32ee7
+
+COCOAPODS: 1.5.2
