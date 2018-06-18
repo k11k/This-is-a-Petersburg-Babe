@@ -1,5 +1,4 @@
 import UIKit
-//AIzaSyC6ZzO2IrlA1vUDXSkzx_JoijP_ENUwWb8
 import Mapbox
 
 class RouteMapViewController: UIViewController {

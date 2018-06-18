@@ -29,7 +29,6 @@
 		5F43817320C9641A00033D2F /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F43817220C9641A00033D2F /* NibView.swift */; };
 		5F5A47C520CBF5FA000FEDF0 /* DistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A47C420CBF5FA000FEDF0 /* DistanceManager.swift */; };
 		5F5B484E20C7B7D500CA971D /* FirstDayObjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B484D20C7B7D500CA971D /* FirstDayObjects.json */; };
-		5F7B7B4220C52CA800B91916 /* ObjectsDataSourceFirstDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7B7B4120C52CA800B91916 /* ObjectsDataSourceFirstDay.swift */; };
 		5F7B7B4520C52D4900B91916 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7B7B4420C52D4900B91916 /* ObjectModel.swift */; };
 		5F7B7B4820C5485800B91916 /* Metro.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F7B7B4720C5485800B91916 /* Metro.json */; };
 		5F7B7B4A20C54AE100B91916 /* MetroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7B7B4920C54AE100B91916 /* MetroModel.swift */; };
@@ -67,7 +66,6 @@
 		5F43817220C9641A00033D2F /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		5F5A47C420CBF5FA000FEDF0 /* DistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceManager.swift; sourceTree = "<group>"; };
 		5F5B484D20C7B7D500CA971D /* FirstDayObjects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FirstDayObjects.json; sourceTree = "<group>"; };
-		5F7B7B4120C52CA800B91916 /* ObjectsDataSourceFirstDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsDataSourceFirstDay.swift; sourceTree = "<group>"; };
 		5F7B7B4420C52D4900B91916 /* ObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
 		5F7B7B4720C5485800B91916 /* Metro.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Metro.json; sourceTree = "<group>"; };
 		5F7B7B4920C54AE100B91916 /* MetroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroModel.swift; sourceTree = "<group>"; };
@@ -137,11 +135,8 @@
 		5F41AECB20C15054000A32C4 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				5F5A47C320CBF5D6000FEDF0 /* Managers */,
 				5F43816620C94E5100033D2F /* ObjectDescription */,
 				5F43815320C90B5A00033D2F /* Route */,
-				5F7B7B4320C52D2A00B91916 /* Models */,
-				5F7B7B4020C52C4000B91916 /* ObjectsDataSource */,
 				5F41AECC20C15067000A32C4 /* DaysList */,
 			);
 			path = UserStories;
@@ -203,14 +198,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		5F7B7B4020C52C4000B91916 /* ObjectsDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				5F7B7B4120C52CA800B91916 /* ObjectsDataSourceFirstDay.swift */,
-			);
-			path = ObjectsDataSource;
-			sourceTree = "<group>";
-		};
 		5F7B7B4320C52D2A00B91916 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +254,8 @@
 		5FACD56420BED4D3007BB329 /* OneWeekInStPetersburg */ = {
 			isa = PBXGroup;
 			children = (
+				5F7B7B4320C52D2A00B91916 /* Models */,
+				5F5A47C320CBF5D6000FEDF0 /* Managers */,
 				5F39140C20CA748D00398EAE /* 3rd */,
 				5F7B7B4D20C54EE900B91916 /* Helpers */,
 				5FACD56520BED4D3007BB329 /* AppDelegate.swift */,
@@ -307,7 +296,6 @@
 				5FACD55E20BED4D3007BB329 /* Sources */,
 				5FACD55F20BED4D3007BB329 /* Frameworks */,
 				5FACD56020BED4D3007BB329 /* Resources */,
-				47A16170EC2C77CB68E126E4 /* [CP] Copy Pods Resources */,
 				0EDC739FCF89A2C07AA530CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -417,24 +405,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47A16170EC2C77CB68E126E4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OneWeekInStPetersburg/Pods-OneWeekInStPetersburg-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneWeekInStPetersburg/Pods-OneWeekInStPetersburg-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -463,7 +433,6 @@
 				5F39141320CA9C2200398EAE /* ObjectImageCollectionViewCell.swift in Sources */,
 				5F40650F20C67BDA0033EE3B /* ObjectWrapper.swift in Sources */,
 				5F43815A20C90B7400033D2F /* RouteMapViewController.swift in Sources */,
-				5F7B7B4220C52CA800B91916 /* ObjectsDataSourceFirstDay.swift in Sources */,
 				5F7B7B4520C52D4900B91916 /* ObjectModel.swift in Sources */,
 				5F43817320C9641A00033D2F /* NibView.swift in Sources */,
 			);
